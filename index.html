@@ -20,12 +20,18 @@
       header,
       footer,
       section {
-        padding: 2.5em 1em;
+        padding: 4em 1em;
       }
 
       section.white {
-        background-color: #fff;
         color: #3390cf;
+        background-color: #fff;
+        background-image: url("images/top-wave.png"), url("images/bottom-wave.png");
+        background-repeat: repeat-x, repeat-x;
+        background-position: top left, bottom left;
+        -webkit-background-size: 4em;
+        -o-background-size: 4em;
+        background-size: 4em;
       }
 
       .content {
@@ -35,13 +41,15 @@
 
       header {
         text-align: center;
+        position: relative;
       }
 
-      header {
-        background: url("images/bottle.png") 90% 100% no-repeat;
-        -webkit-background-size: 5em;
-        -o-background-size: 5em;
-        background-size: 5em;
+      header .bottle {
+        position: absolute;
+        right: 10%;
+        bottom: -1.3em;
+        width: 7em;
+        height: 7em;
       }
 
       h1 {
@@ -162,6 +170,8 @@
       <div class="content">
         <h1>Писмо в бутилка до себе си</h1>
       </div>
+
+      <img src="images/bottle.png" class="bottle">
     </header>
 
     <section class="intro white">
