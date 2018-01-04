@@ -163,6 +163,56 @@
         background-color: #3390ce;
         color: #fff;
       }
+
+      @media (max-width: 600px) {
+        header,
+        footer,
+        section {
+          padding: 3em 1em;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        header .bottle {
+          width: 4em;
+          height: 4em;
+          right: 14%;
+        }
+
+        footer {
+          padding: 1em 1em 7em 1em;
+        }
+
+        footer h3 {
+          font-size: 1.5rem;
+        }
+
+        form label {
+          float: none;
+          display: block;
+          margin-bottom: 0.5em;
+        }
+
+        form label.inline {
+          display: inline;
+          margin-bottom: 0;
+        }
+
+        form .field {
+          margin-left: 0;
+        }
+
+        form input.button {
+          letter-spacing: 0;
+          padding: 0.7em 1em;
+          width: 100%;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+      }
     </style>
   </head>
   <body>
